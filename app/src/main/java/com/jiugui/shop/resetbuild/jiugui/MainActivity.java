@@ -1,7 +1,6 @@
 package com.jiugui.shop.resetbuild.jiugui;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -119,11 +118,8 @@ public class MainActivity extends BaseFragmentActivity {
 
         @Override
         public void onResponse(String response, int id) {
-            Log.e("response", id + "---" + response);
             SlideImageIconSecKill slideImageIconSecKill = JSON.parseObject(response, SlideImageIconSecKill.class);
 
-            Log.e("slideImageIconSeckill", slideImageIconSecKill.toString());
-            Log.e("slideImageIconSeckill--", slideImageIconSecKill.getSec_kill_round_info().getSec_kill_round_end_time());
         }
     };
 

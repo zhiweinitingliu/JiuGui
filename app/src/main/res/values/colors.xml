@@ -7,4 +7,7 @@
     <color name="rgb_235_79_56">#eb4f38</color>
     <color name="rgb_169_183_183">#a9b7b7</color>
     <color name="rgb_34_0_0">#22000000</color>
+    <color name="rgb_255_255_255">#FFFFFF</color>
+    <color name="rgb_220_20_60">#DC143C</color>
+
 </resources>
