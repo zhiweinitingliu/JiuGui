@@ -3,111 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <LinearLayout
-        android:id="@+id/title"
+    <com.jiugui.shop.resetbuild.jiugui.widget.CnToolbar
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="@color/rgb_220_20_60"
-        android:focusable="true"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"/>
 
-        <!--显示当前城市-->
-        <LinearLayout
-            android:id="@+id/currentDistrict"
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:visibility="visible">
-
-            <ImageView
-                android:id="@+id/location_img"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:src="@mipmap/locate_current_address" />
-
-            <TextView
-                android:id="@+id/currentDistrict_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:singleLine="true"
-                android:text="定位中"
-                android:textColor="@color/rgb_255_255_255"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:src="@mipmap/city_tag"
-                android:visibility="gone" />
-
-        </LinearLayout>
-
-        <!--搜索-->
-        <LinearLayout
-            android:id="@+id/search"
-            android:layout_width="1px"
-            android:layout_height="30dp"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:layout_marginBottom="7dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:background="@drawable/white_solid_rectangle_3corners_search"
-            android:focusable="false"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp">
-
-            <ImageView
-                android:id="@+id/search_img"
-                android:layout_width="20dp"
-                android:layout_height="20dp" />
-
-            <TextView
-                android:id="@+id/search_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginLeft="3dp"
-                android:gravity="center"
-                android:text="搜索"
-                android:textColor="@color/rgb_220_20_60" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/right"
-            android:layout_width="70dp"
-            android:layout_height="fill_parent"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="invisible">
-
-            <ImageView
-                android:id="@+id/right_img"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
-                android:src="@mipmap/locate_current_address" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:text="定位"
-                android:textColor="@color/rgb_255_255_255"
-                android:textSize="10sp" />
-
-        </LinearLayout>
-    </LinearLayout>
+    <com.jiugui.shop.resetbuild.jiugui.view.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="wrap_content"
